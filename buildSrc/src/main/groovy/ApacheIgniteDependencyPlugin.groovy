@@ -14,6 +14,8 @@ class ApacheIgniteDependencyPlugin implements Plugin<Project> {
             compile "org.apache.ignite:ignite-core:${project.igniteVersion}"
             compile "org.apache.ignite:ignite-indexing:${project.igniteVersion}"
             compile "org.apache.ignite:ignite-spring:${project.igniteVersion}"
+            testCompile "org.apache.ignite:ignite-core:${project.igniteVersion}:tests"
+            testCompile "com.oracle.bedrock:bedrock-runtime:${project.bedrockVersion}"
         }
 
     }

@@ -52,7 +52,7 @@ subprojects {
     sourceSets {
         main {
             resources {
-                srcDirs = ['src/main/resources']
+                srcDirs = ["src/main/resources", "${rootDir}/config"]
             }
         }
         test {
