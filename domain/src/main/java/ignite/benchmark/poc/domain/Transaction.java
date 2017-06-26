@@ -1,4 +1,4 @@
-package ignite.horizontal.scaling.domain;
+package ignite.benchmark.poc.domain;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
