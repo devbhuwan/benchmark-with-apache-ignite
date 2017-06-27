@@ -25,3 +25,5 @@ hs_err_pid*
 **/build/
 *.iml
 **/.idea/
+/.nb-gradle/
+/${sys:IGNITE_HOME}/

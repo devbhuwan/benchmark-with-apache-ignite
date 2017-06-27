@@ -1,3 +1,4 @@
 rootProject.name = 'benchmark-with-apache-ignite'
 include 'domain'
+include 'ignite-data-node'
 
