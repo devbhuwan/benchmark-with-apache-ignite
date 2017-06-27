@@ -7,7 +7,7 @@ Horizontal Scaling Benchmark
 ```
 - Cluster Scheme
 ```
-    8 Horizontallly Scaled Data Nodes
+    8 Horizontally Scaled Data Nodes
 ```
 - Data Given    
 ```
