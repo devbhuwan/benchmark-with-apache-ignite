@@ -4,17 +4,17 @@
 
     ```Perform simple transactions in distributed system (transfer from one account to another)```    
     
-#### - Cluster Scheme
-    
-    8 Horizontallly Scaled Data Nodes
+- Cluster Scheme
+    ```8 Horizontallly Scaled Data Nodes```
         
-#### - Data Given
-    
+- Data Given    
+```
     1. 800 mln accounts
     2. 1000 mln transactions   
     *** mln aka. millions     
+```    
 
-#### - Key Parameters
+- Key Parameters
     1. Data Accuracy
     2. Execution Time
     3. CPU load
