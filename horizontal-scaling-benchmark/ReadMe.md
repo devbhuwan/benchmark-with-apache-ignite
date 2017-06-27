@@ -11,8 +11,8 @@
 #### -Data Given
     
     1. 800 mln accounts
-    2. 1000 mln transactions
-         
+    2. 1000 mln transactions   
+    *** mln aka. millions     
 
 #### -Key Parameters
     1. Data Accuracy
