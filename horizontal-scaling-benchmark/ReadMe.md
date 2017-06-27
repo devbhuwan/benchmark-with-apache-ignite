@@ -8,9 +8,8 @@
         
 - Data Given    
 ```
-    1. 800 mln accounts
-    2. 1000 mln transactions   
-    *** mln aka. millions     
+    1. 800 millions accounts
+    2. 1000 millions transactions   
 ```
 
 - Key Parameters
