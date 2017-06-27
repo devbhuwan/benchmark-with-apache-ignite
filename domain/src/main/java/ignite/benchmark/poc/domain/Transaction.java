@@ -14,5 +14,7 @@ public class Transaction implements Serializable {
     private String type;
     private BigDecimal amount;
     private LocalDate date;
+    private String fromAccount;
+    private String toAccount;
 
 }

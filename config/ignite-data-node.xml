@@ -14,6 +14,8 @@
     </bean>
 
     <import resource="classpath:discovery-spi.xml"/>
+    <import resource="classpath:account-cache.xml"/>
+    <import resource="transaction-cache.xml"/>
     <!--
         Configuration of Ignite node.
     -->
@@ -22,6 +24,12 @@
             <bean class="org.apache.ignite.logger.log4j2.Log4J2Logger">
                 <constructor-arg type="java.io.File" value="classpath:ignite-data-node-log4j2.xml"/>
             </bean>
+        </property>
+        <property name="cacheConfiguration">
+            <array>
+                <ref bean="accountCache.cfg"/>
+                <ref bean="transactionCache.cfg"/>
+            </array>
         </property>
         <!--
             TCP discovery SPI can be configured with list of addresses if multicast is not available.

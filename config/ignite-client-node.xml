@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <import resource="classpath:discovery-spi.xml"/>
+    <!--
+        Configuration of Ignite node.
+    -->
+    <bean id="dataGrid.cfg" class="org.apache.ignite.configuration.IgniteConfiguration">
+        <property name="clientMode" value="true"/>
+        <!--
+            TCP discovery SPI can be configured with list of addresses if multicast is not available.
+        -->
+        <property name="discoverySpi" ref="discoverySpi.cfg"/>
+    </bean>
+</beans>
