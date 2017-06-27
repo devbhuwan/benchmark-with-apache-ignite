@@ -1,8 +1,8 @@
 ### Horizontal Scaling Benchmark
 
-### - Task
+- Task
 
-    Perform simple transactions in distributed system (transfer from one account to another)    
+    ```Perform simple transactions in distributed system (transfer from one account to another)```    
     
 #### - Cluster Scheme
     
