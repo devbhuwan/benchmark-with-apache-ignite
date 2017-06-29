@@ -10,6 +10,7 @@ buildscript {
         classpath 'se.transmode.gradle:gradle-docker:1.2'
         classpath 'com.wiredforcode:gradle-heroku-plugin:1.0.0'
         classpath 'com.github.rholder:gradle-one-jar:1.0.4'
+        classpath "io.qameta.allure:allure-gradle:2.3"
     }
 }
 
@@ -38,6 +39,7 @@ subprojects {
     apply plugin: 'java'
     apply plugin: 'maven'
     apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'io.qameta.allure'
 
     sourceCompatibility = 1.8
 
@@ -69,6 +71,12 @@ subprojects {
         testCompile("$appLibs.assertj")
         compile("$appLibs.groovyAll")
         testCompile("$appLibs.spockCore")
+    }
+
+    allure {
+        autoconfigure = true
+        version = '2.1.1'
+        //downloadLink = 'file:///home/bhuwan/Downloads/allure-2.1.1.zip'
     }
 
 }

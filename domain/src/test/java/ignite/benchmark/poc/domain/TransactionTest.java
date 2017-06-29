@@ -9,5 +9,8 @@ import static org.junit.Assert.*;
  * @date 2017/06/26
  */
 public class TransactionTest {
-    
+    @Test
+    public void name() {
+        assertTrue(true);
+    }
 }

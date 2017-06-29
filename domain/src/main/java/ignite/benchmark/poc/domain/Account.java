@@ -15,4 +15,9 @@ public class Account implements Serializable {
     private String accountNumber;
     @QuerySqlField
     private BigDecimal balance;
+
+    public Account(String accountNumber, BigDecimal balance) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+    }
 }
