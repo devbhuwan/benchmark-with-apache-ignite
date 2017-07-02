@@ -13,6 +13,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import java.math.BigDecimal;
 import java.util.stream.IntStream;
 
+import static horizontal.scaling.benchmark.SimpleTransferServiceImpl.ACCOUNT_CACHE;
+
 /**
  * @author Bhuwan Upadhyay
  * @date 2017/06/27
@@ -21,8 +23,8 @@ import java.util.stream.IntStream;
 @ContextConfiguration(classes = {IgniteClientNodeApplication.class, SimpleTransferServiceImpl.class})
 public class IgniteClientNodeSimpleTransferImplApplicationTest {
 
-    public static final String ACCOUNT_CACHE = "accountCache";
     public static final int BALANCE = 100000;
+
     @Autowired
     private TransferService transferService;
 
